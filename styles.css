@@ -93,10 +93,7 @@
     border: 1px solid white;
     transition: 1s;
 }
-nav .fa{
 
-
-}
 @media (max-width:700px){
     .textbox h1{
         font-size: 20px;
@@ -145,6 +142,9 @@ nav .fa{
     width: 100%;
     overflow-x: scroll;
     
+}
+::-webkit-scrollbar{
+    height: 0;
 }
 .row h3{
     color: rgb(9, 9, 9);
