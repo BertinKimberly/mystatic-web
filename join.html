@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>My website</title>
+</head>
+<body>
+    <section class="join-header">
+       <nav class="pages">
+         <a href="index.html" class="logo">Bertink</a>
+         <div class="links-container">
+            <span class="material-symbols-outlined" id="hidem" onclick="hideMenu()">close</span>
+            <ul>
+               
+                
+                <a href="index.html"><li>HOME</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="courses.html"><li>COURSES</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+                <a href="join.html"><li>JOIN US</li></a>
+            </ul>
+         </div>
+
+         <span class="material-symbols-outlined" id="showm" onclick="showMenu()">menu</span>
+       </nav>
+       <div class="textbox">
+        <h1>Join Us</h1>
+        
+        <a href="#" class="join_us">Start Now</a>
+       </div>
+       
+    </section>
+
+   <section class="sign-up">
+    
+        
+<form action="#" method="get" id="login-form" >
+    <h1>Create new account</h1>
+    <div class="content-cont"><label for="FirtName" class="label">First name</label> <input type="text" placeholder="Enter your name" class="inputbox" id="f-name"></div>
+    <div class="content-cont"><label for="lastname" class="label">Last name</label> <input type="text" placeholder="Enter another name" class="inputbox" id="l-name"></div>
+    <div class="content-cont"><label for="Age" class="label">Age</label> <input type="number" placeholder="Enter your age" class="inputbox" id="age"></div>
+    <div class="content-cont"><label for="Email" class="label">Email</label> <input type="email" placeholder="Enter your email" class="inputbox" id="email"></div>
+   <a href="" class="join_us" id="submit">Create account</a>
+   <a href="login.html" class="enter">Already have an account</a>
+ </form>
+     </div>
+
+   
+</section>
+
+ <section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt ipsa accusantium quia quo ut,<br> aperiam nisi obcaecati </p>
+  </section>
+    <script>
+const hide=document.querySelector('#hidem');
+const show=document.querySelector('#showm');
+const container=document.querySelector('.links-container');
+
+ function hideMenu(){
+    hide.style.display="none";
+    show.style.display="block";
+    container.style.marginRight="-200px";
+    container.style.transition="1s";
+
+ }
+ function showMenu(){
+show.style.display="none";
+hide.style.display="block";
+container.style.marginRight="0px";
+container.style.transition="1s";
+ }
+
+    </script>
+</body>
+</html>
